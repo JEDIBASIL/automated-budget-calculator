@@ -42,6 +42,7 @@
             name="income"
             placeholder="Enter your Income"
             type="number"
+            min="1000"
           />
         </div>
 
@@ -52,6 +53,7 @@
             name="age"
             placeholder="Enter your age"
             type="number"
+            min="10"
           />
         </div>
       </div>
@@ -80,7 +82,7 @@
 
       <div>
         <label for="">Number of Dependents</label>
-        <input required name="dependents" type="number" />
+        <input required name="dependents" type="number"  min="0" />
       </div>
 
       <button name="btn">Submit</button>
