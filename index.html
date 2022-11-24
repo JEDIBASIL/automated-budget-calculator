@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>Automated budget calculator</h1>
+    </nav>
+    <form action="budget.html" id="form-details">
+      <h2>Please fill the form below</h2>
+      <div class="grid-2">
+        <div class="form-content">
+          <label for="">First name</label>
+          <input
+            required
+            name="firstName"
+            placeholder="Enter first name"
+            type="text"
+          />
+        </div>
+        <div class="form-content">
+          <label for="">last name</label>
+          <input
+            required
+            name="lastName"
+            placeholder="Enter last name"
+            type="text"
+          />
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="form-content">
+          <label for="">Monthly income ₦</label>
+          <input
+            required
+            name="income"
+            placeholder="Enter your Income"
+            type="number"
+          />
+        </div>
+
+        <div class="form-content">
+          <label for="">age</label>
+          <input
+            required
+            name="age"
+            placeholder="Enter your age"
+            type="number"
+          />
+        </div>
+      </div>
+<div>
+  <h4>Gender</h4>
+      <div class="grid-2">
+        <div>
+          <label for="">Male</label>
+          <input required name="gender" type="radio" value="male" />
+        </div>
+        <div>
+          <label for="">Female</label>
+          <input required name="gender" type="radio" value="female" />
+        </div>
+      </div>
+    </div>
+      <div class="form-content">
+        <label for="">Marital status</label>
+        <select required name="maritalStatus" id="">
+          <option value="" disabled selected>Select Marital status</option>
+          <option value="married">Married</option>
+          <option value="single">Single</option>
+          <option value="divorced">Divorced</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="">Number of Dependents</label>
+        <input required name="dependents" type="number" />
+      </div>
+
+      <button name="btn">Submit</button>
+      
+    </form>
+
+    <div class="table-container">
+      <button class="back"> < Back </button>
+      <h3 class="persons-name"></h3>
+    <table class="formatted-table">
+      <tr>
+        <th>Expenses</th>
+        <th>Percentage</th>
+        <th>Amount</th>
+      </tr>
+    </table>
+    <div class="summary">
+
+    </div>
+  </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
+<!-- [
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "deposite",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getbalance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_amount",
+				"type": "uint256"
+			}
+		],
+		"name": "withdraw",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	}
+] -->
